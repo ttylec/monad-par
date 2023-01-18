@@ -37,6 +37,8 @@ import Data.IORef         (IORef,newIORef,readIORef,writeIORef,atomicModifyIORef
 import Text.Printf        (printf)
 import GHC.Conc           (numCapabilities,yield)
 import Control.Monad
+import Control.Monad.IO.Class
+import Control.Monad.Trans
 import           "mtl" Control.Monad.Cont as C
 import qualified "mtl" Control.Monad.Reader as RD
 import qualified       System.Random.MWC as Random
